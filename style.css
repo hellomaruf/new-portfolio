@@ -16,6 +16,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
+  position: fixed;
   padding: 0 100px;
   height: 100px;
   width: 100%;
@@ -31,6 +33,10 @@
 .menu a li {
   list-style: none;
   color: #d3d3d3;
+  transition: 0.5s;
+}
+.menu a li:hover {
+  color: var(--main-color);
 }
 .navSpan {
   font-weight: 400;
@@ -52,6 +58,10 @@
 .navMedia button:hover {
   background-color: #1b1b1b;
 }
+.navMedia button a {
+  text-decoration: none;
+  color: white;
+}
 .navMedia button i {
   padding: 0 5px;
   font-size: 1.3vw;
@@ -60,6 +70,8 @@
 #heroSection {
   display: flex;
   flex-direction: row;
+  height: 700px;
+  padding-top: 100px;
   background-color: #1b1b1b;
 }
 .heroLeftContent {
@@ -84,10 +96,11 @@
   font-size: 3vw;
   color: var(--main-color);
 }
-.heroLeftContent img {
-  width: 80px;
+.heroRightContent img {
+  width: 90px;
   display: inline-block;
   padding-top: 20px;
+  padding-left: 40px;
 }
 .heroLeftContent p {
   padding-bottom: 20px;
@@ -124,4 +137,75 @@
     rgba(255, 243, 172, 1) 25%,
     rgba(252, 221, 39, 1) 100%
   );
+}
+
+/* About section */
+#aboutSection {
+  background-color: var(--bg-color);
+}
+#aboutSection h1 {
+  color: white;
+  text-align: center;
+  font-size: 2.5vw;
+  font-weight: 500;
+  border-bottom: 6px groove var(--main-color);
+  margin: 0 640px;
+  padding-top: 40px;
+}
+#aboutSectionContent {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  background-color: var(--bg-color);
+}
+.aboutLeftContent {
+  width: 50%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+}
+.aboutLeftContent img {
+  width: 75%;
+  padding-left: 100px;
+  padding-top: 75px;
+}
+.aboutRightContent {
+  width: 50%;
+  height: 600px;
+  padding-right: 100px;
+}
+.aboutRightContent {
+  display: flex;
+  flex-direction: column;
+  padding-top: 130px;
+}
+.aboutRightContent .quoteTitle {
+  color: var(--main-color);
+  padding-bottom: 30px;
+}
+.quote {
+  font-size: 2vw;
+  background-color: #484848;
+  color: white;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  border-left: 9px solid var(--main-color);
+  margin-right: 40px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.quote span {
+  font-size: 3vw;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: var(--main-color);
+}
+.aboutRightContent .aboutPera {
+  color: var(--p-color);
+  font-size: 1.2vw;
+}
+.aboutPera span {
+  font-weight: 600;
+  border: 3px solid var(--main-color);
+  border-radius: 20px;
+  padding: 0.1px 6px;
 }
