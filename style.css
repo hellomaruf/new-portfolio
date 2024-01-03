@@ -149,8 +149,6 @@
   text-align: center;
   font-size: 2.5vw;
   font-weight: 500;
-  border-bottom: 6px groove var(--main-color);
-  margin: 0 640px;
   padding-top: 40px;
 }
 #aboutSectionContent {
@@ -218,13 +216,90 @@
   display: flex;
   background-color: var(--bg-color2);
 }
+.allSkillContent h1 {
+  background-color: var(--bg-color2);
+  color: white;
+  text-align: center;
+  font-size: 2.5vw;
+  font-weight: 500;
+  padding-top: 40px;
+}
 .skills {
-  width: 50%;
-  background-color: #484848;
+  width: 60%;
+  color: white;
   height: 600px;
+  padding-top: 50px;
 }
 .socials {
-  width: 50%;
-  background-color: aqua;
+  width: 40%;
   height: 600px;
+}
+.skill {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin: 10px 10px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border-bottom: 5px solid var(--main-color);
+  background-color: #484848;
+  transition: 0.3s;
+}
+.skill:hover {
+  background-color: var(--bg-color);
+}
+.firstContent {
+  display: flex;
+  align-items: center;
+}
+.skill .firstContent img {
+  width: 30px;
+}
+.skill .firstContent h4 {
+  padding-left: 12px;
+}
+.secondContent p {
+  font-size: 0.9vw;
+  color: var(--navtextColor);
+}
+.skills {
+  padding-left: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.social img {
+  width: 25px;
+}
+.social {
+  display: flex;
+  background-color: var(--bg-color);
+  width: 400px;
+  padding: 20px 15px;
+  margin: 8px 0;
+  color: white;
+  border-radius: 5px;
+  border: 2px solid #565656;
+  transition: 0.3s;
+}
+.social:hover {
+  background-color: #565656;
+}
+.social h4 {
+  padding: 0 10px;
+  font-weight: 500;
+  font-size: 1.3vw;
+  padding-right: 20px;
+}
+.social p {
+  color: var(--navtextColor);
+}
+.socialContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 100px;
+  padding-top: 50px;
+}
+.socialContent a {
+  text-decoration: none;
 }
