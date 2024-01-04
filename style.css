@@ -212,7 +212,7 @@
 /* Skill and Socials */
 #skillSocials {
   width: 100%;
-  height: 600px;
+  height: 700px;
   display: flex;
   background-color: var(--bg-color2);
 }
@@ -222,7 +222,8 @@
   text-align: center;
   font-size: 2.5vw;
   font-weight: 500;
-  padding-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 50px;
 }
 .skills {
   width: 60%;
@@ -287,7 +288,7 @@
 .social h4 {
   padding: 0 10px;
   font-weight: 500;
-  font-size: 1.3vw;
+  font-size: 1.2vw;
   padding-right: 20px;
 }
 .social p {
@@ -302,4 +303,75 @@
 }
 .socialContent a {
   text-decoration: none;
+}
+
+/* Experience Section */
+
+.experienceEducation {
+  width: 100%;
+  height: 900px;
+  display: flex;
+  padding-top: 50px;
+  background-color: var(--bg-color);
+}
+.experiences {
+  width: 55%;
+  height: 700px;
+  padding: 20px 30px 0 100px;
+  color: white;
+}
+.educations {
+  width: 45%;
+  height: 700px;
+  color: white;
+  padding: 20px 100px 0 40px;
+}
+.educations ul {
+  padding-left: 40px;
+}
+.educations ul li {
+  line-height: 30px;
+}
+.experienceTitle img {
+  width: 40px;
+}
+.experienceContent {
+  background-color: #484848;
+  margin: 20px 0;
+  width: 85%;
+  margin-top: 50px;
+  padding: 25px 40px;
+  border-radius: 15px;
+}
+.experienceTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 25px;
+}
+.experienceTitle h3 {
+  font-size: 1.5vw;
+  font-weight: 500;
+}
+.peraContent {
+  color: var(--p-color);
+  font-size: 1.1 vw;
+}
+.allContent {
+  padding-top: 40px;
+}
+.education1 {
+  padding-top: 30px;
+}
+.education .focus {
+  color: var(--main-color);
+  padding-bottom: 5px;
+}
+.educationHeader h2 {
+  font-size: 1.8vw;
+  font-weight: 500;
+}
+.experienceHeader h2 {
+  font-size: 1.8vw;
+  font-weight: 500;
 }
