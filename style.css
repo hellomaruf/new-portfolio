@@ -22,6 +22,7 @@
   padding: 0 100px;
   height: 100px;
   width: 100%;
+  border-bottom: 0.5px solid #6b6b6b;
   background-color: var(--bg-color);
 }
 .menu {
@@ -66,6 +67,32 @@
 .navMedia button i {
   padding: 0 5px;
   font-size: 1.3vw;
+}
+@media (max-width: 600px) {
+  #navbar {
+    height: 80px;
+    position: fixed;
+    overflow: hidden;
+  }
+  #navbar .menu {
+    display: none;
+  }
+  #navbar .logo h3 {
+    font-size: 3vw;
+  }
+  .navMedia button {
+    padding: 3px 8px;
+    border: none;
+    background-color: #484848;
+    color: white;
+    margin: 0 5px;
+    border-radius: 20px;
+    font-size: 2.2vw;
+    transition: 0.4s;
+  }
+  .navMedia button i {
+    font-size: 2.2vw;
+  }
 }
 /* hero section */
 #heroSection {
@@ -139,7 +166,33 @@
     rgba(252, 221, 39, 1) 100%
   );
 }
-
+@media (max-width: 600px) {
+  #heroSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 900px;
+  }
+  .heroRightContent {
+    width: 100%;
+  }
+  .heroLeftContent {
+    width: 100%;
+    padding: 50px 100px 50px 100px;
+  }
+  .heroRightContent img {
+    width: 100%;
+    padding: 0px;
+    padding: 0 50px;
+  }
+  .heroLeftContent h1 .span0 {
+    font-size: 4.5vw;
+  }
+  .heroLeftContent h1 .span1,
+  .heroLeftContent h1 .span2 {
+    font-size: 6.5vw;
+  }
+}
 /* About section */
 #aboutSection {
   background-color: var(--bg-color);
@@ -208,7 +261,37 @@
   border-radius: 20px;
   padding: 0.1px 6px;
 }
-
+@media (max-width: 600px) {
+  #aboutSectionContent {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+  }
+  #aboutSection h1 {
+    font-size: 4.5vw;
+    padding-bottom: 20px;
+  }
+  .aboutLeftContent {
+    display: none;
+  }
+  .aboutRightContent {
+    width: 100%;
+    display: flex;
+    padding: 0 100px;
+    padding-right: 50px;
+  }
+  .aboutRightContent .quote {
+    font-size: 3.5vw;
+  }
+  .aboutRightContent .quoteTitle {
+    padding: 0;
+    font-size: 2.2vw;
+    padding-bottom: 5px;
+  }
+  .aboutRightContent .aboutPera {
+    font-size: 2.5vw;
+  }
+}
 /* Skill and Socials */
 #skillSocials {
   width: 100%;
@@ -305,6 +388,52 @@
   text-decoration: none;
 }
 
+@media (max-width: 600px) {
+  #skillSocials {
+    display: flex;
+    flex-direction: column;
+    height: 1100px;
+  }
+  .skills {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    padding: 0 50px;
+  }
+  .skill {
+    width: 35%;
+  }
+  .socialContent {
+    padding: 0;
+  }
+  .socials {
+    width: 100%;
+    margin-top: 30px;
+    /* height: 600px; */
+  }
+  .secondContent p {
+    font-size: 1.5vw;
+  }
+  .firstContent h4 {
+    font-size: 2.3vw;
+    font-weight: 500;
+  }
+  .skill .firstContent img {
+    width: 25px;
+  }
+  .social h4 {
+    font-size: 2.8vw;
+  }
+  .social p {
+    font-size: 2vw;
+  }
+  .allSkillContent h1 {
+    font-size: 4.5vw;
+    padding-bottom: 25px;
+  }
+}
 /* Experience Section */
 
 .experienceEducation {
@@ -374,4 +503,82 @@
 .experienceHeader h2 {
   font-size: 1.8vw;
   font-weight: 500;
+}
+
+/* Projects Section */
+.allProjects {
+  padding: 0 100px;
+  /* background-color: var(--bg-color2); */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px 0;
+}
+.allProjectsContent {
+  background-color: var(--bg-color2);
+  height: 1100px;
+}
+.projects {
+  width: 380px;
+  background-color: var(--bg-color);
+  color: white;
+  border-radius: 10px;
+  margin: 15px 15px;
+}
+.projectImg img {
+  width: 100%;
+}
+.projectContent .mainContent {
+  padding: 15px 20px;
+}
+.projectContent .mainContent .sourse {
+  display: flex;
+  margin: 5px 0;
+}
+.projectContent .mainContent .sourse .git {
+  margin-left: 20px;
+}
+.sourse .live a,
+.sourse .git a {
+  text-decoration: none;
+  color: black;
+  background: rgb(252, 221, 39);
+  background: linear-gradient(
+    90deg,
+    rgba(252, 221, 39, 1) 42%,
+    rgba(255, 243, 172, 1) 100%
+  );
+  padding: 4px 8px;
+  border-radius: 20px;
+  font-size: 1vw;
+  transition: 0.3s;
+}
+.sourse .live a:hover,
+.sourse .git a:hover {
+  background: rgb(255, 243, 172);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 243, 172, 1) 25%,
+    rgba(252, 221, 39, 1) 100%
+  );
+}
+.sourse {
+  padding: 15px 0;
+}
+.mainContent .projectTitle h2 {
+  font-weight: 500;
+  font-size: 1.5vw;
+}
+.projectPera p {
+  font-size: 1vw;
+  color: var(--navtextColor);
+}
+.allProjectsContent h1 {
+  background-color: var(--bg-color2);
+  color: white;
+  text-align: center;
+  font-size: 2.5vw;
+  font-weight: 500;
+  padding-top: 60px;
+  /* padding-bottom: 50px; */
 }
