@@ -504,7 +504,46 @@
   font-size: 1.8vw;
   font-weight: 500;
 }
-
+@media (max-width: 600px) {
+  .experienceEducation {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1500px;
+  }
+  .experiences {
+    width: 100%;
+    padding: 0;
+    padding: 0 100px;
+  }
+  .experienceContent {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .experienceHeader h2 {
+    font-size: 3.5vw;
+  }
+  .experienceTitle h3 {
+    font-size: 2.5svw;
+  }
+  .peraContent {
+    font-size: 2.2vw;
+  }
+  .educations {
+    width: 100%;
+    padding: 0 100px;
+    padding-top: 150px;
+  }
+  .educationHeader h2 {
+    font-size: 3.5vw;
+  }
+  .allContent {
+    padding-top: 20px;
+  }
+  .education ul li {
+    font-size: 2.3vw;
+  }
+}
 /* Projects Section */
 .allProjects {
   padding: 0 100px;
@@ -581,4 +620,29 @@
   font-weight: 500;
   padding-top: 60px;
   /* padding-bottom: 50px; */
+}
+@media (max-width: 600px) {
+  .allProjectsContent {
+    height: 2600px;
+  }
+  .allProjectsContent h1 {
+    font-size: 4.5vw;
+    padding-top: 30px;
+  }
+  .allProjects {
+    margin-top: 20px;
+  }
+  .mainContent .projectTitle h2 {
+    font-size: 3vw;
+  }
+  .sourse .live a,
+  .sourse .git a {
+    font-size: 1.9vw;
+  }
+  .sourse {
+    padding: 10px 0;
+  }
+  .projectPera p {
+    font-size: 2vw;
+  }
 }
